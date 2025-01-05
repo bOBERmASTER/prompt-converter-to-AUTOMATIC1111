@@ -215,6 +215,12 @@ def process_images_in_folder():
         if file_name.lower().endswith(('.jpg', '.jpeg')):
             image_path = os.path.join(current_folder, file_name)
             base_filename = os.path.splitext(file_name)[0]
+            output_file = base_filename + ".txt"
+
+            if os.path.exists(output_file):
+                print(f"Файл {output_file} уже существует. Пропускаем {file_name}")
+                continue
+
             print(f"Обработка файла: {file_name}")
 
             user_comment = extract_user_comment(image_path)
