@@ -7,6 +7,10 @@ have AIR's (civitai URN) `urn:air:sd1:checkpoint:civitai:4384@128713`
 - [example of image ready for convert](https://civitai.com/images/21793336) 
 - [another example of image](https://civitai.com/images/32155314)
 
+for run script you need:
+1. python3
+2. PIL lib `pip install pillow`
+
 ## how it works
 1. Metadata Extraction: It reads the metadata of JPEG images, specifically looking for a "UserComment" or EXIF data field. This field is expected to contain information about how the image was generated.
 2. JSON Parsing: If a "UserComment" is found and contains a "resource-stack", the script attempts to parse it as JSON. This JSON is assumed to hold details about the generation process.
