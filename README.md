@@ -10,6 +10,9 @@ have AIR's (civitai URN) `urn:air:sd1:checkpoint:civitai:4384@128713`
 for run script you need:
 1. python3
 2. PIL lib `pip install pillow`
+3. put script in folder with images
+4. run
+5. .txt files will contain prompt you need
 
 ## how it works
 1. Metadata Extraction: It reads the metadata of JPEG images, specifically looking for a "UserComment" or EXIF data field. This field is expected to contain information about how the image was generated.
