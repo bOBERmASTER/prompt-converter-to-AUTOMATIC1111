@@ -1,4 +1,4 @@
-# fast and easy converter civitai (??) prompt to AUTOMATIC1111
+# fast and easy converter civitai prompt to AUTOMATIC1111
 
 prompt what do you may convert is json with `resource-stack` at the beginning
 
